@@ -717,6 +717,8 @@ require('lazy').setup({
             },
           },
         },
+
+        codebook = {},
       }
 
       -- Ensure the servers and tools above are installed
