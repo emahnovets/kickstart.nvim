@@ -888,14 +888,15 @@ require('lazy').setup({
     },
   },
   {
-    'navarasu/onedark.nvim',
-    priority = 1000, -- make sure to load this before all the other start plugins
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    priority = 1002,
     config = function()
-      require('onedark').setup {
-        style = 'darker',
+      require('catppuccin').setup {
+        flavour = 'frappe',
       }
-      -- Enable theme
-      require('onedark').load()
+
+      vim.cmd.colorscheme 'catppuccin'
     end,
   },
   { -- You can easily change to a different colorscheme.
@@ -998,8 +999,9 @@ require('lazy').setup({
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
   -- require 'kickstart.plugins.render_markdown',
   require 'kickstart.plugins.markdown_preview',
-  require 'kickstart.plugins.harpoon',
+  -- require 'kickstart.plugins.harpoon',
   require 'kickstart.plugins.copilot',
+  require 'kickstart.plugins.vim-tmux-navigator',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
