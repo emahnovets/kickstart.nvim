@@ -1002,6 +1002,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.harpoon',
   require 'kickstart.plugins.copilot',
   require 'kickstart.plugins.vim-tmux-navigator',
+  require 'kickstart.plugins.rustaceanvim',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
